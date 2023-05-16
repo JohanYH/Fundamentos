@@ -36,15 +36,19 @@
     $estudiante3 = $_POST["persona3"];
     $edad3 = $_POST["edad3"];
     $mayor = 0;
+    $personaMayor = "";
 
     if ($edad > $mayor) {
         $mayor = $edad;
+        $personaMayor = $estudiante1;
     }if ($edad2 > $mayor) {
         $mayor = $edad2;
+        $personaMayor = $estudiante2;
     }if ($edad3 > $mayor) {
         $mayor = $edad3;
+        $personaMayor = $estudiante3;
     }
-    echo $mayor;
+    echo "Esta Estudiante {$personaMayor} es mayor por que tiene {$mayor} años de edad"
 
 
 
